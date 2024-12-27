@@ -88,6 +88,16 @@ static const variant_info_t RMX3370_IN_info = {
     .sku = "bitra",
 };
 
+static const variant_info_t PEDM00_CN_info = {
+    .prjversion_value = "20061",
+
+    .device = "OP4E5D",
+    .model = "PEDM00",
+    .name = "PEDM00",
+
+    .sku = "xynew",
+};
+
 static const std::vector<variant_info_t> variants = {
     RMX2071_CN_info,
     RMX2072_CN_info,
@@ -97,6 +107,7 @@ static const std::vector<variant_info_t> variants = {
     RMX3370_CNLZ_info,
     RMX3370_GLOBAL_info,
     RMX3370_IN_info,
+    PEDM00_CN_info,
 };
 
 void vendor_load_properties() {
