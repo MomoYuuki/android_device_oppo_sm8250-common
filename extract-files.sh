@@ -111,6 +111,10 @@ function blob_fixup() {
         vendor/bin/sensors.qti)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            echo 'gettid: 1' >> ${2}
+            ;;
     esac
 }
 

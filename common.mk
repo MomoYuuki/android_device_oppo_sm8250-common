@@ -104,8 +104,8 @@ TARGET_ENABLE_BLUR := true
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
     libcamera_metadata_shim \
+    android.frameworks.stats@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
